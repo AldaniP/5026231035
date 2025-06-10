@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Aldani Parsetyo : 5026231035</title>
+    <title>Aldani Prasetyo : 5026231035</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">

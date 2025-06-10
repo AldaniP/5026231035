@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\PenggarisDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -82,3 +83,15 @@ Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+
+
+//route penggarisDB
+Route::get('/penggaris', [PenggarisDBController::class, 'index']);
+Route::get('/penggaris/tambah', [PenggarisDBController::class, 'tambah']);
+Route::post('/penggaris/store', [PenggarisDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
+Route::get('/penggaris/edit/{id}',[PenggarisDBController::class, 'edit']);
+Route::post('/penggaris/update',[PenggarisDBController::class, 'update']);
+Route::get('/penggaris/hapus/{id}', [PenggarisDBController::class, 'hapus']);
+
+Route::get('/penggaris/cari', [PenggarisDBController::class, 'cari']);
