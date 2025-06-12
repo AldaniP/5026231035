@@ -7,7 +7,7 @@
 
 	<form action="/karyawan/cari" method="GET" class="form-inline">
         <label class="form-label">Cari Data karyawan : </label>
-		<input type="text" name="cari" placeholder="Cari Merk karyawan .." class="form-control" >
+		<input type="text" name="cari" placeholder="Cari karyawan .." class="form-control" >
 		<input type="submit" value="CARI" class="btn btn-primary" >
 	</form>
     <br />
