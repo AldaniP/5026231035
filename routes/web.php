@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\PenggarisDBController;
+use App\Http\Controllers\KaryawanDBController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -95,3 +96,16 @@ Route::post('/penggaris/update',[PenggarisDBController::class, 'update']);
 Route::get('/penggaris/hapus/{id}', [PenggarisDBController::class, 'hapus']);
 
 Route::get('/penggaris/cari', [PenggarisDBController::class, 'cari']);
+
+
+
+
+
+//route karyawanDB
+Route::get('/karyawan', [karyawanDBController::class, 'index']);
+Route::get('/karyawan/tambah', [karyawanDBController::class, 'tambah']);
+Route::post('/karyawan/store', [karyawanDBController::class, 'store']);
+Route::post('/karyawan/update',[karyawanDBController::class, 'update']);
+Route::get('/karyawan/hapus/{id}', [karyawanDBController::class, 'hapus']);
+
+Route::get('/karyawan/cari', [karyawanDBController::class, 'cari']);
