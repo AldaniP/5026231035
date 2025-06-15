@@ -120,10 +120,10 @@
                     <a class="nav-link" href="/karyawan"></i> Latihan 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></i> Latihan 2</a>
+                    <a class="nav-link" href="/karyawan"></i> Latihan 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></i> Latihan 3</a>
+                    <a class="nav-link" href="/pageCounter"></i> Latihan 3</a>
                 </li>
             </ul>
         </div>
