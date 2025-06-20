@@ -114,7 +114,7 @@
                     <a class="nav-link" href="/penggaris"></i> Tugas CRUD</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"></i> EAS</a>
+                    <a class="nav-link" href="/eas"></i> EAS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/karyawan"></i> Latihan 1</a>

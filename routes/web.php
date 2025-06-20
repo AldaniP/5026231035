@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\PenggarisDBController;
 use App\Http\Controllers\KaryawanDBController;
 use App\Http\Controllers\PageCounterDBController;
+use App\Http\Controllers\NewkaryawanDBController;
 
 
 Route::get('/', function () {
@@ -112,3 +113,11 @@ Route::get('/karyawan/cari', [karyawanDBController::class, 'cari']);
 
 //route pageCounterDB
 Route::get('/pageCounter', [PageCounterDBController::class, 'index']);
+
+//route eas
+Route::get('/eas', [NewkaryawanDBController::class, 'index']);
+Route::get('/eas/tambah', [newkaryawanDBController::class, 'tambah']);
+Route::post('/eas/store', [newkaryawanDBController::class, 'store']);
+Route::post('/eas/update',[newkaryawanDBController::class, 'update']);
+Route::get('/eas/hapus/{NIP}', [newkaryawanDBController::class, 'hapus']);
+Route::get('/eas/cari', [newkaryawanDBController::class, 'cari']);
